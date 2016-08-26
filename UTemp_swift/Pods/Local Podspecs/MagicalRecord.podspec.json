@@ -1,0 +1,55 @@
+{
+  "name": "MagicalRecord",
+  "version": "3.0.0.dev.1454103475",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "summary": "Super Awesome Easy Fetching for Core Data 1!!!11!!!!1!.",
+  "homepage": "http://github.com/magicalpanda/MagicalRecord",
+  "authors": {
+    "Saul Mora": "saul@magicalpanda.com",
+    "Tony Arnold": "tony@thecocoabots.com"
+  },
+  "source": {
+    "git": "https://github.com/magicalpanda/MagicalRecord.git",
+    "branch": "release/3.0"
+  },
+  "description": "Handy fetching, threading and data import helpers to make Core Data a little easier to use.",
+  "requires_arc": true,
+  "default_subspecs": "Core",
+  "platforms": {
+    "ios": "7.0",
+    "osx": "10.9"
+  },
+  "subspecs": [
+    {
+      "name": "Core",
+      "frameworks": "CoreData",
+      "header_dir": "MagicalRecord",
+      "source_files": "Library/**/*.{h,m}",
+      "prefix_header_contents": "#import <CoreData/CoreData.h>\n#import \"MagicalRecord.h\""
+    },
+    {
+      "name": "Core+Logging",
+      "frameworks": "CoreData",
+      "header_dir": "MagicalRecord",
+      "source_files": "Library/**/*.{h,m}",
+      "prefix_header_contents": "#import <CoreData/CoreData.h>\n#if defined(COCOAPODS_POD_AVAILABLE_CocoaLumberjack)\n  #import \"DDLog.h\"\n#endif\n#define MR_LOGGING_ENABLED 1\n#import \"MagicalRecord.h\""
+    },
+    {
+      "name": "Shorthand",
+      "frameworks": "CoreData",
+      "header_dir": "MagicalRecord",
+      "source_files": "Library/**/*.{h,m}",
+      "prefix_header_contents": "#import <CoreData/CoreData.h>\n#define MR_SHORTHAND 1\n#import \"MagicalRecord.h\""
+    },
+    {
+      "name": "Shorthand+Logging",
+      "frameworks": "CoreData",
+      "header_dir": "MagicalRecord",
+      "source_files": "Library/**/*.{h,m}",
+      "prefix_header_contents": "#import <CoreData/CoreData.h>\n#if defined(COCOAPODS_POD_AVAILABLE_CocoaLumberjack)\n  #import \"DDLog.h\"\n#endif\n#define MR_LOGGING_ENABLED 1\n#define MR_SHORTHAND 1\n#import \"MagicalRecord.h\""
+    }
+  ]
+}

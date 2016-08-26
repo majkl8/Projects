@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (3.1.5)
+  - MagicalRecord (3.0.0.dev.1454103475):
+    - MagicalRecord/Core (= 3.0.0.dev.1454103475)
+  - MagicalRecord/Core (3.0.0.dev.1454103475)
+  - SWXMLHash (2.1.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - MagicalRecord (from `git@github.com:magicalpanda/MagicalRecord.git`, branch `release/3.0`)
+  - SWXMLHash (~> 2.1.0)
+
+EXTERNAL SOURCES:
+  MagicalRecord:
+    :branch: release/3.0
+    :git: git@github.com:magicalpanda/MagicalRecord.git
+
+CHECKOUT OPTIONS:
+  MagicalRecord:
+    :commit: b23ddfb9e9992b663c4dac8a8f0e7839e0256efc
+    :git: git@github.com:magicalpanda/MagicalRecord.git
+
+SPEC CHECKSUMS:
+  Alamofire: 5f730ba29fd113b7ddd71c1e65d0c630acf5d7b0
+  MagicalRecord: 4b9c567cce77c5b728ce8ec57302cc8cc0f5e737
+  SWXMLHash: 7257a358b3ab2f7a209e0b4e4cf552e8b6df5f0f
+
+COCOAPODS: 0.39.0

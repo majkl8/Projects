@@ -1,0 +1,9 @@
+platform :ios, '9.0'
+use_frameworks!
+inhibit_all_warnings!
+
+pod 'Alamofire'
+pod 'MagicalRecord', :git => 'git@github.com:magicalpanda/MagicalRecord.git', :branch => 'release/3.0'
+
+source 'https://github.com/CocoaPods/Specs.git'
+pod 'SWXMLHash', '~> 2.1.0'

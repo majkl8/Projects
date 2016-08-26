@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UITableViewCell"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="65" id="7yt-kq-knb" customClass="ITWItemCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7yt-kq-knb" id="jIk-tf-Djt">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1P-zg-ocQ">
+                        <rect key="frame" x="14" y="2" width="242" height="29"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="29" id="9bo-7B-lyB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="999" translatesAutoresizingMaskIntoConstraints="NO" id="aTZ-CP-FHx">
+                        <rect key="frame" x="113" y="30" width="94" height="29"/>
+                        <animations/>
+                        <connections>
+                            <action selector="stepperCounter:" destination="7yt-kq-knb" eventType="valueChanged" id="R9j-I5-ew1"/>
+                        </connections>
+                    </stepper>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cGZ-v5-J5t">
+                        <rect key="frame" x="264" y="2" width="43" height="29"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nWg-uX-fBC">
+                        <rect key="frame" x="265" y="39" width="40" height="29"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="Reset">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="resetCounter:" destination="7yt-kq-knb" eventType="touchUpInside" id="un2-68-8DS"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tca-yf-LKC">
+                        <rect key="frame" x="14" y="39" width="56" height="29"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="Rename">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="renameStatName:" destination="7yt-kq-knb" eventType="touchUpInside" id="rGd-9Y-ENF"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="cGZ-v5-J5t" firstAttribute="trailing" secondItem="K1P-zg-ocQ" secondAttribute="trailing" constant="51" id="9Ys-kO-LXP"/>
+                    <constraint firstItem="nWg-uX-fBC" firstAttribute="top" secondItem="cGZ-v5-J5t" secondAttribute="bottom" constant="8" symbolic="YES" id="A1t-52-hWQ"/>
+                    <constraint firstItem="cGZ-v5-J5t" firstAttribute="top" secondItem="jIk-tf-Djt" secondAttribute="top" constant="2" id="IJb-yx-a9y"/>
+                    <constraint firstItem="K1P-zg-ocQ" firstAttribute="leading" secondItem="Tca-yf-LKC" secondAttribute="leading" id="JWv-LF-RuU"/>
+                    <constraint firstItem="aTZ-CP-FHx" firstAttribute="centerX" secondItem="K1P-zg-ocQ" secondAttribute="centerX" constant="25" id="M4z-31-tgd"/>
+                    <constraint firstItem="aTZ-CP-FHx" firstAttribute="leading" secondItem="Tca-yf-LKC" secondAttribute="trailing" constant="43" id="OKb-Z1-vf8"/>
+                    <constraint firstItem="Tca-yf-LKC" firstAttribute="top" secondItem="K1P-zg-ocQ" secondAttribute="bottom" constant="8" symbolic="YES" id="Ux5-fr-hyi"/>
+                    <constraint firstItem="K1P-zg-ocQ" firstAttribute="centerX" secondItem="jIk-tf-Djt" secondAttribute="centerX" constant="-25" id="WZ0-t4-EOp"/>
+                    <constraint firstItem="nWg-uX-fBC" firstAttribute="centerX" secondItem="cGZ-v5-J5t" secondAttribute="centerX" id="aFa-VD-qnD"/>
+                    <constraint firstAttribute="trailing" secondItem="nWg-uX-fBC" secondAttribute="trailing" constant="15" id="dVi-vI-Wzv"/>
+                    <constraint firstItem="nWg-uX-fBC" firstAttribute="leading" secondItem="aTZ-CP-FHx" secondAttribute="trailing" constant="58" id="e9K-dV-n6f"/>
+                    <constraint firstItem="Tca-yf-LKC" firstAttribute="centerY" secondItem="nWg-uX-fBC" secondAttribute="centerY" id="fBX-sj-Dzc"/>
+                    <constraint firstItem="Tca-yf-LKC" firstAttribute="bottom" secondItem="nWg-uX-fBC" secondAttribute="bottom" id="gIh-RH-pm4"/>
+                    <constraint firstItem="K1P-zg-ocQ" firstAttribute="leading" secondItem="jIk-tf-Djt" secondAttribute="leading" constant="14" id="tWv-Dj-kyZ"/>
+                    <constraint firstItem="K1P-zg-ocQ" firstAttribute="centerY" secondItem="cGZ-v5-J5t" secondAttribute="centerY" id="uEF-6w-E87"/>
+                    <constraint firstItem="aTZ-CP-FHx" firstAttribute="top" secondItem="jIk-tf-Djt" secondAttribute="top" constant="30" id="zBA-sa-udv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="statLabel" destination="K1P-zg-ocQ" id="Lmv-Ds-4ov"/>
+                <outlet property="stepper" destination="aTZ-CP-FHx" id="d7w-8a-VPX"/>
+                <outlet property="valueLabel" destination="cGZ-v5-J5t" id="sHg-AB-4LR"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

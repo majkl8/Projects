@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15D21" minimumToolsVersion="Xcode 7.0">
+    <entity name="Measurement" representedClassName=".Measurement" syncable="YES">
+        <attribute name="dateAdded" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="temperature" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="Refresh" representedClassName=".Refresh" syncable="YES">
+        <attribute name="hours" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="minutes" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="refreshFlag" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="seconds" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="Setting" representedClassName=".Setting" syncable="YES">
+        <attribute name="flag" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="maxTemp" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="minTemp" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Measurement" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="Refresh" positionX="-63" positionY="27" width="128" height="105"/>
+        <element name="Setting" positionX="-63" positionY="9" width="128" height="105"/>
+    </elements>
+</model>
